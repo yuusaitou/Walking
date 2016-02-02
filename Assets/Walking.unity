@@ -144,6 +144,10 @@ Prefab:
       propertyPath: m_GravityMultiplier
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 5e9e851c0e142814dac026a256ba2ac0, type: 2}
   m_IsPrefabParent: 0
@@ -183,7 +187,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &446329573
 RectTransform:
   m_ObjectHideFlags: 0
@@ -326,7 +330,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &604103589
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -462,7 +466,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!23 &1358993180
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -623,22 +627,22 @@ GameObject:
   - 92: {fileID: 1819348521}
   - 124: {fileID: 1819348520}
   - 81: {fileID: 1819348519}
-  - 114: {fileID: 1819348518}
   - 114: {fileID: 1819348524}
+  - 114: {fileID: 1819348518}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1819348518
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1819348517}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e5df7d35ba9698f4a83299cad896a183, type: 3}
   m_Name: 
@@ -720,9 +724,12 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1819348517}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: e3967116f6a6525448e118be8daa74f4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   cameraRotSpeed: 0.31
+  moveSpeed: 0.5
+  fieldToGeocode: 0.000005
+  reloadInterval: 10

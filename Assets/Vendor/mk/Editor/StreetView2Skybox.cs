@@ -255,4 +255,7 @@ namespace MK
         public double Heading {get; set;}
         public double Pitch   {get; set;}
     }
+
+
+
 }

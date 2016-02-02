@@ -12,6 +12,9 @@ public class CoreScript : MonoBehaviour
     //=== private ====
     private int width = 640;
     private int height = 640;
+//    private double latitude = 35.7085362;
+//    private double longitude = 139.7592594;
+
     private double latitude = 35.708577;
     private double longitude = 139.7604026;
     private string key = "AIzaSyAfcaXGfwb4xJq707_VawEpcacP7fsBw_s";
@@ -28,7 +31,10 @@ public class CoreScript : MonoBehaviour
     {
         UpdateSkybox();
     }
+
     
+    
+
     // メイン部分
     void UpdateSkybox()
     {
@@ -127,6 +133,15 @@ public class CoreScript : MonoBehaviour
         skybox.material = material;
 
     }
+    public void moveWorld(float latitudeDelta, float longitudeDelta) {
+        latitude += latitudeDelta;
+        longitude += longitudeDelta;
+        UpdateSkybox();
+    }
+
+    public Vector2 getLatitudeAndLogitude() {
+        return new Vector2((float)latitude, (float)longitude);
+    }
 }
 
 
@@ -148,3 +163,6 @@ public struct SkyboxManifest
             };
         }
     }
+
+
+
